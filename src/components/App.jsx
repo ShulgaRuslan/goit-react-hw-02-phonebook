@@ -21,8 +21,9 @@ export class App extends Component {
     }));
   };
 
-  filterContacts = filter => {
-    this.setState({ filter: filter });
+  filterContacts = event => {
+    const { value } = event.target;
+    this.setState({ filter: value });
   };
 
   filterList = () => {

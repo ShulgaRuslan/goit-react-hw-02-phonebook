@@ -8,7 +8,7 @@ export const Filter = ({ filter, onFilterChange }) => {
             <input
             className={css.SearchBox_input}
             type="text"
-            onChange={event => onFilterChange(event.currentTarget.value)}
+            onChange={onFilterChange}
             value={filter}
             placeholder="Please enter name"
             >
@@ -17,6 +17,7 @@ export const Filter = ({ filter, onFilterChange }) => {
     );
   };
   
+export default Filter;
 
 
 Filter.propTypes = {
